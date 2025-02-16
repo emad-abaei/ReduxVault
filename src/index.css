@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-body font-normal min-h-screen sm:max-w-2xl m-auto p-6 sm:p-12
+    bg-gradient-to-bl from-amber-300 via-red-500 to-violet-600;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--default {
+  @apply font-body max-w-[90%] font-light backdrop-blur-md bg-white/30 my-3 px-6 py-4 rounded-md z-10 border flex flex-col items-start gap-1;
+}
