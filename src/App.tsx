@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header fullName={fullName} />
       <Main>
         {fullName ? (
           <>
