@@ -44,7 +44,7 @@ function Customer() {
           onChange={(e) => setFullName(e.target.value)}
         />
 
-        <div className='flex flex-col my-3'>
+        <div className='flex flex-col my-2'>
           <Input
             label='ID Number'
             val={nationalId}
@@ -52,7 +52,7 @@ function Customer() {
           />
         </div>
 
-        <div className='sm:place-self-endm'>
+        <div className='sm:place-self-end sm:mt-2'>
           <Button>Create new customer</Button>
         </div>
       </form>
