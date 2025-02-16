@@ -46,9 +46,11 @@ function FormWithdraw() {
   }
 
   return (
-    <Form label='Withdraw' onSubmit={(e: FormEvent) => handleWithdrawal(e)}>
+    <Form onSubmit={(e: FormEvent) => handleWithdrawal(e)}>
       <Input
+        label='Withdraw'
         type='number'
+        placeholder='amount'
         val={withdrawalAmount}
         onChange={(e) => setWithdrawalAmount(e.target.value)}
         expand

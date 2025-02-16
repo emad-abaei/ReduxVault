@@ -42,21 +42,27 @@ function FormDeposit() {
   }
 
   return (
-    <Form label='Deposit' onSubmit={(e: FormEvent) => handleDeposit(e)}>
+    <Form onSubmit={(e: FormEvent) => handleDeposit(e)}>
       <Input
+        label='Deposit'
         type='number'
+        placeholder='amount'
         val={depositAmount}
         onChange={(e) => setDepositAmount(e.target.value)}
       />
 
-      <select
-        value={currency}
-        className='block border-gray-100 hover:border-gray-200 focus:ring-0 focus:border-gray-300 rounded'
-        onChange={(e) => setCurrency(e.target.value)}>
-        <option value='USD'>US Dollar</option>
-        <option value='EUR'>Euro</option>
-        <option value='GBP'>British Pound</option>
-      </select>
+      <label htmlFor='currency'>
+        Currency
+        <select
+          id='currency'
+          value={currency}
+          className='w-full block border-gray-100 hover:border-gray-200 focus:ring-0 focus:border-gray-300 rounded'
+          onChange={(e) => setCurrency(e.target.value)}>
+          <option value='USD'>US Dollar</option>
+          <option value='EUR'>Euro</option>
+          <option value='GBP'>British Pound</option>
+        </select>
+      </label>
 
       <Button>
         {isLoading

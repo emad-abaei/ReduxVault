@@ -75,20 +75,20 @@ function FormLoan() {
 
   return (
     <>
-      <Form
-        label='Request Loan'
-        onSubmit={(e: FormEvent) => handleRequestLoan(e)}>
+      <Form onSubmit={(e: FormEvent) => handleRequestLoan(e)}>
         <Input
+          label='Loan Amount'
           type='number'
           val={loanAmount}
-          placeholder='loan amount'
+          placeholder='amount'
           onChange={(e) => setLoanAmount(e.target.value)}
         />
 
         <Input
+          label='Loan Purpose'
           type='text'
           val={loanPurpose}
-          placeholder='loan purpose'
+          placeholder='purpose'
           onChange={(e) => setLoanPurpose(e.target.value)}
         />
 
