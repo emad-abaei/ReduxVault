@@ -38,19 +38,21 @@ function Customer() {
       <form
         className='mt-4 text-gray-800 flex flex-col'
         onSubmit={(e) => handleSubmit(e)}>
-        <label className='flex flex-col mb-4'>
-          Name
-          <Input val={fullName} onChange={(e) => setFullName(e.target.value)} />
-        </label>
+        <Input
+          label='Name'
+          val={fullName}
+          onChange={(e) => setFullName(e.target.value)}
+        />
 
-        <label className='flex flex-col mb-5'>
-          ID Number
+        <div className='flex flex-col my-3'>
           <Input
+            label='ID Number'
             val={nationalId}
             onChange={(e) => setNationalId(e.target.value)}
           />
-        </label>
-        <div className='sm:place-self-end'>
+        </div>
+
+        <div className='sm:place-self-endm'>
           <Button>Create new customer</Button>
         </div>
       </form>
