@@ -9,7 +9,7 @@ type CustomNotificationProps = ToastContentProps<{
 
 function ToastMessage({ data }: CustomNotificationProps) {
   return (
-    <>
+    <div role={data.type === "success" ? "status" : "alert"} aria-live='polite'>
       <h3
         className={`${
           data.type === "success" ? "text-emerald-600" : "text-rose-600"
@@ -23,7 +23,7 @@ function ToastMessage({ data }: CustomNotificationProps) {
         {data.title}
       </h3>
       <p className='text-gray-700'>{data.message}</p>
-    </>
+    </div>
   );
 }
 
