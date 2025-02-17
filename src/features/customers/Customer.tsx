@@ -10,7 +10,7 @@ function Customer() {
 
   return (
     <Box>
-      <div className='flex justify-between items-center'>
+      <div className='flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center'>
         <h2 className='text-xl text-gray-700'>
           Welcome, {customer.toUpperCase()}
         </h2>
