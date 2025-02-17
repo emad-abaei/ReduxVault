@@ -13,6 +13,8 @@ function Tabs({ activeOperation, onActiveOperation }: TabsProps) {
     <div className='inline-block md:hidden backdrop-blur-sm  bg-white/05 py-1 border rounded-md text-gray-500'>
       {tabs.map((tab) => (
         <span
+          role='tab'
+          aria-selected={activeOperation === tab}
           className={`my-3 px-4 sm:px-6 py-1 cursor-pointer transition ${
             activeOperation === tab
               ? "bg-white/70 my-3 rounded-md text-gray-800 "
