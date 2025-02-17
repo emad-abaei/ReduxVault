@@ -48,9 +48,9 @@ npm run dev
 
 ## 📩 Contributing
 
-- Contributions are welcome! Feel free to submit issues or pull requests.
+Contributions are welcome! Feel free to submit issues or pull requests.
 
 ## 📜 License
 
-- ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
-  This project is licensed under the MIT License.
+![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
+This project is licensed under the MIT License.
