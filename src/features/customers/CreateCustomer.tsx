@@ -40,6 +40,7 @@ function Customer() {
         onSubmit={(e) => handleSubmit(e)}>
         <Input
           label='Name'
+          id='name'
           val={fullName}
           onChange={(e) => setFullName(e.target.value)}
         />
@@ -47,6 +48,7 @@ function Customer() {
         <div className='flex flex-col my-2'>
           <Input
             label='ID Number'
+            id='id-number'
             val={nationalId}
             onChange={(e) => setNationalId(e.target.value)}
           />

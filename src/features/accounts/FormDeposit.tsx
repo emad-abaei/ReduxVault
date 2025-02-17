@@ -44,7 +44,8 @@ function FormDeposit() {
   return (
     <Form onSubmit={(e: FormEvent) => handleDeposit(e)}>
       <Input
-        label='Deposit'
+        label='Deposit Amount'
+        id='deposit-amount'
         type='number'
         placeholder='amount'
         val={depositAmount}

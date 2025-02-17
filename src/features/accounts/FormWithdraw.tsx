@@ -48,7 +48,8 @@ function FormWithdraw() {
   return (
     <Form onSubmit={(e: FormEvent) => handleWithdrawal(e)}>
       <Input
-        label='Withdraw'
+        label='Withdraw Amount'
+        id='withdraw-amount'
         type='number'
         placeholder='amount'
         val={withdrawalAmount}

@@ -78,6 +78,7 @@ function FormLoan() {
       <Form onSubmit={(e: FormEvent) => handleRequestLoan(e)}>
         <Input
           label='Loan Amount'
+          id='loan-amount'
           type='number'
           val={loanAmount}
           placeholder='amount'
@@ -86,6 +87,7 @@ function FormLoan() {
 
         <Input
           label='Loan Purpose'
+          id='loan-purpose'
           type='text'
           val={loanPurpose}
           placeholder='purpose'

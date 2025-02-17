@@ -8,6 +8,7 @@ interface InputProps {
   type?: string;
   placeholder?: string;
   expand?: boolean;
+  id: string;
 }
 
 function Input({
@@ -16,19 +17,22 @@ function Input({
   onChange,
   type = "text",
   placeholder = "",
-  expand = false
+  expand = false,
+  id
 }: InputProps) {
   return (
-    <label className={`${expand ? "md:col-span-2" : ""}`}>
-      {label}
+    <div className={`${expand ? "md:col-span-2" : ""}`}>
+      <label htmlFor={id}>{label}</label>
       <input
+        id={id}
         type={type}
         className={`w-full border-gray-100 rounded hover:border-gray-200 focus:ring-0 focus:border-gray-300 placeholder:text-gray-400`}
         value={val}
         onChange={onChange}
         placeholder={placeholder}
+        aria-labelledby={id}
       />
-    </label>
+    </div>
   );
 }
 
