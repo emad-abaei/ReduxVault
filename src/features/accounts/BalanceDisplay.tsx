@@ -6,8 +6,10 @@ function BalanceDisplay() {
   const balance = useSelector((store: RootStateType) => store.account.balance);
 
   return (
-    <div className='text-lg text-primary'>
-      Your Balance: {formatCurrency(balance)}
+    <div role='region' aria-labelledby='account-balance'>
+      <p className='text-lg text-primary' id='account-balance'>
+        Your Balance: {formatCurrency(balance)}
+      </p>
     </div>
   );
 }
