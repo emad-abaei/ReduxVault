@@ -10,7 +10,7 @@ function Box({ children, newCustomer }: BoxProps) {
     <div
       className={`${
         newCustomer && "max-w-96 mx-auto"
-      } backdrop-blur-md bg-white/30 my-5 p-6 rounded-md z-10 border relative`}>
+      } backdrop-blur-md bg-white/30 my-5 p-4 sm:p-6 rounded-md z-10 border relative`}>
       {children}
     </div>
   );
