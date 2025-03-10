@@ -54,3 +54,12 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 This project is licensed under the MIT License.
+
+## 🙌 Acknowledgments
+
+This project was originally inspired by a course by **Jonas Schmedtmann**. The course focused on implementing the logic in **JavaScript** without a UI.
+
+I extended the project by:  
+✅ Implementing a full **UI** using **React & Tailwind CSS**  
+✅ Migrating the codebase to **TypeScript** for better type safety  
+✅ Adding extra features and enhancements
