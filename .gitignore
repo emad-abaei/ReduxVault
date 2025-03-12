@@ -131,6 +131,3 @@ dist
 
 # macOS DS files
 .DS_Store
-
-# Netlify Authentication
-_headers 
