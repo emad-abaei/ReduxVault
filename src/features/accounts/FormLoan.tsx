@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import { useSelector } from "react-redux";
-import store, { RootStateType } from "../../store";
+import { RootStateType } from "../../store";
 import { payLoan, requestLoan } from "./AccountSlice";
 import { useAppDispatch } from "../../hooks/useAppDispatch";
 import { notify } from "../../utils/helper";
