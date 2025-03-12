@@ -51,7 +51,6 @@ function FormLoan() {
     });
     setLoanAmount("");
     setLoanPurpose("");
-    console.log(store.getState());
   }
 
   function handlePayLoan() {
